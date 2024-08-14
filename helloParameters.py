@@ -7,7 +7,7 @@ def main(param1, param2):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Accepts two parameters")
-    parser.add_argument("param1", type=str, help="First parameter")
-    parser.add_argument("param2", type=int, help="Second parameter")
+    parser.add_argument("param1", type=bool, help="First parameter")
+    parser.add_argument("param2", type=str, help="Second parameter")
     args = parser.parse_args()
     main(args.param1, args.param2)
